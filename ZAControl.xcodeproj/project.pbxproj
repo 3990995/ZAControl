@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D1F20E7196F844B00B4AAF2 /* ZATextFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1F20E6196F844B00B4AAF2 /* ZATextFieldView.m */; };
+		0D1F20E9196F845E00B4AAF2 /* ZATextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D1F20E8196F845E00B4AAF2 /* ZATextFieldView.xib */; };
 		0D1F671E196F81B90008C882 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D1F671D196F81B80008C882 /* Foundation.framework */; };
 		0D1F6720196F81B90008C882 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D1F671F196F81B90008C882 /* CoreGraphics.framework */; };
 		0D1F6722196F81B90008C882 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D1F6721196F81B90008C882 /* UIKit.framework */; };
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D1F20E5196F844B00B4AAF2 /* ZATextFieldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZATextFieldView.h; sourceTree = "<group>"; };
+		0D1F20E6196F844B00B4AAF2 /* ZATextFieldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZATextFieldView.m; sourceTree = "<group>"; };
+		0D1F20E8196F845E00B4AAF2 /* ZATextFieldView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ZATextFieldView.xib; path = ../ZATextFieldView.xib; sourceTree = "<group>"; };
 		0D1F671A196F81B80008C882 /* ZAControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZAControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D1F671D196F81B80008C882 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0D1F671F196F81B90008C882 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -115,6 +120,9 @@
 				0D1F672C196F81B90008C882 /* AppDelegate.h */,
 				0D1F672D196F81B90008C882 /* AppDelegate.m */,
 				0D1F672F196F81B90008C882 /* Main.storyboard */,
+				0D1F20E5196F844B00B4AAF2 /* ZATextFieldView.h */,
+				0D1F20E6196F844B00B4AAF2 /* ZATextFieldView.m */,
+				0D1F20E8196F845E00B4AAF2 /* ZATextFieldView.xib */,
 				0D1F6732196F81B90008C882 /* ViewController.h */,
 				0D1F6733196F81B90008C882 /* ViewController.m */,
 				0D1F6735196F81B90008C882 /* Images.xcassets */,
@@ -231,6 +239,7 @@
 				0D1F6736196F81B90008C882 /* Images.xcassets in Resources */,
 				0D1F6728196F81B90008C882 /* InfoPlist.strings in Resources */,
 				0D1F6731196F81B90008C882 /* Main.storyboard in Resources */,
+				0D1F20E9196F845E00B4AAF2 /* ZATextFieldView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +261,7 @@
 				0D1F6734196F81B90008C882 /* ViewController.m in Sources */,
 				0D1F672E196F81B90008C882 /* AppDelegate.m in Sources */,
 				0D1F672A196F81B90008C882 /* main.m in Sources */,
+				0D1F20E7196F844B00B4AAF2 /* ZATextFieldView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +466,7 @@
 				0D1F674E196F81B90008C882 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D1F674F196F81B90008C882 /* Build configuration list for PBXNativeTarget "ZAControlTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +475,7 @@
 				0D1F6751196F81B90008C882 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
