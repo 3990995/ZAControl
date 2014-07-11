@@ -12,16 +12,15 @@
 
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
-    [textField resignFirstResponder];
-    if (_returnBlock) {
-        _returnBlock(textField.text);
+    if (_blockReturn) {
+        _blockReturn(textField.text);
     }
     return YES;
 }
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField{
-    if (_didBeginEditingBlock) {
-        _didBeginEditingBlock();
+    if (_blockDidBeginEditing) {
+        _blockDidBeginEditing();
     }
 }
 

@@ -1,21 +1,20 @@
 //
 //  ZATextFieldView.h
-//  ZAControl
+//  ZAControl 输入题控件
 //
 //  Created by liao on 14-7-11.
 //  Copyright (c) 2014年 Zhenai Inc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+#import "ZABaseView.h"
 
-typedef void(^ReturnBlock)(NSString *value);
-typedef void(^DidBeginEditingBlock)(void);
 
-@interface ZATextFieldView : UIView<UITextFieldDelegate>
+@interface ZATextFieldView : ZABaseView<UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 
-@property (copy, nonatomic) ReturnBlock returnBlock;
-@property (copy, nonatomic) DidBeginEditingBlock didBeginEditingBlock;
+@property (copy, nonatomic) BlockReturn blockReturn;
+@property (copy, nonatomic) BlockDidBeginEditing blockDidBeginEditing;
 
 @end
