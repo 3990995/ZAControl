@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ZATextFieldView : UIView
+typedef void(^ReturnBlock)(NSString *value);
+typedef void(^DidBeginEditingBlock)(void);
+
+@interface ZATextFieldView : UIView<UITextFieldDelegate>
+
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+
+@property (copy, nonatomic) ReturnBlock returnBlock;
+@property (copy, nonatomic) DidBeginEditingBlock didBeginEditingBlock;
 
 @end

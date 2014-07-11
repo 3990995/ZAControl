@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ZAControlManager.h"
 
 @interface ViewController ()
 
@@ -17,7 +18,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    UIView *v = [ZAControlManager loadTextFieldValue:nil
+                                     withPlaceholder:@"请输入昵称"
+                                           withFrame:self.view.frame
+                                     didBeginEditing:^{
+                                         NSLog(@"didBeginEditing");
+                                     }   returnBlock:^(NSString *value) { NSLog(@"value:%@",value);}
+                                     ];
+    [self.view addSubview:v];
+    
 }
 
 - (void)didReceiveMemoryWarning
