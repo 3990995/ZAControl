@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0D1F20E7196F844B00B4AAF2 /* ZATextFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1F20E6196F844B00B4AAF2 /* ZATextFieldView.m */; };
-		0D1F20E9196F845E00B4AAF2 /* ZATextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D1F20E8196F845E00B4AAF2 /* ZATextFieldView.xib */; };
 		0D1F20EC196F8E5900B4AAF2 /* ZAControlManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1F20EB196F8E5900B4AAF2 /* ZAControlManager.m */; };
 		0D1F671E196F81B90008C882 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D1F671D196F81B80008C882 /* Foundation.framework */; };
 		0D1F6720196F81B90008C882 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D1F671F196F81B90008C882 /* CoreGraphics.framework */; };
@@ -25,10 +24,13 @@
 		0D1F6747196F81B90008C882 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0D1F6745196F81B90008C882 /* InfoPlist.strings */; };
 		0D1F6749196F81B90008C882 /* ZAControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1F6748196F81B90008C882 /* ZAControlTests.m */; };
 		0DEAA2BE196FDFC700BE75ED /* ZAJudgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEAA2BD196FDFC700BE75ED /* ZAJudgeView.m */; };
-		0DEAA2C0196FE04000BE75ED /* ZAJudgeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DEAA2BF196FE04000BE75ED /* ZAJudgeView.xib */; };
 		0DEAA2C5197005E400BE75ED /* ZABaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEAA2C4197005E400BE75ED /* ZABaseView.m */; };
 		0DEAA2CA1970136200BE75ED /* ZA6LevelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEAA2C91970136200BE75ED /* ZA6LevelView.m */; };
 		0DEAA2CC1970136F00BE75ED /* ZA6LevelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DEAA2CB1970136F00BE75ED /* ZA6LevelView.xib */; };
+		0DEAA2CE197110B200BE75ED /* ZATextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DEAA2CD197110B200BE75ED /* ZATextFieldView.xib */; };
+		0DEAA2D0197110C700BE75ED /* ZAJudgeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DEAA2CF197110C700BE75ED /* ZAJudgeView.xib */; };
+		0DEAA2D419711D7200BE75ED /* ZA7LevelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEAA2D219711D7200BE75ED /* ZA7LevelView.m */; };
+		0DEAA2D519711D7200BE75ED /* ZA7LevelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DEAA2D319711D7200BE75ED /* ZA7LevelView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +46,6 @@
 /* Begin PBXFileReference section */
 		0D1F20E5196F844B00B4AAF2 /* ZATextFieldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZATextFieldView.h; sourceTree = "<group>"; };
 		0D1F20E6196F844B00B4AAF2 /* ZATextFieldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZATextFieldView.m; sourceTree = "<group>"; };
-		0D1F20E8196F845E00B4AAF2 /* ZATextFieldView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ZATextFieldView.xib; path = ../ZATextFieldView.xib; sourceTree = "<group>"; };
 		0D1F20EA196F8E5900B4AAF2 /* ZAControlManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAControlManager.h; sourceTree = "<group>"; };
 		0D1F20EB196F8E5900B4AAF2 /* ZAControlManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZAControlManager.m; sourceTree = "<group>"; };
 		0D1F671A196F81B80008C882 /* ZAControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZAControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,12 +69,16 @@
 		0D1F6748196F81B90008C882 /* ZAControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZAControlTests.m; sourceTree = "<group>"; };
 		0DEAA2BC196FDFC700BE75ED /* ZAJudgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAJudgeView.h; sourceTree = "<group>"; };
 		0DEAA2BD196FDFC700BE75ED /* ZAJudgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZAJudgeView.m; sourceTree = "<group>"; };
-		0DEAA2BF196FE04000BE75ED /* ZAJudgeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZAJudgeView.xib; sourceTree = "<group>"; };
 		0DEAA2C3197005E400BE75ED /* ZABaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZABaseView.h; sourceTree = "<group>"; };
 		0DEAA2C4197005E400BE75ED /* ZABaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZABaseView.m; sourceTree = "<group>"; };
 		0DEAA2C81970136200BE75ED /* ZA6LevelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZA6LevelView.h; sourceTree = "<group>"; };
 		0DEAA2C91970136200BE75ED /* ZA6LevelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZA6LevelView.m; sourceTree = "<group>"; };
 		0DEAA2CB1970136F00BE75ED /* ZA6LevelView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZA6LevelView.xib; sourceTree = "<group>"; };
+		0DEAA2CD197110B200BE75ED /* ZATextFieldView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZATextFieldView.xib; sourceTree = "<group>"; };
+		0DEAA2CF197110C700BE75ED /* ZAJudgeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZAJudgeView.xib; sourceTree = "<group>"; };
+		0DEAA2D119711D7200BE75ED /* ZA7LevelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZA7LevelView.h; sourceTree = "<group>"; };
+		0DEAA2D219711D7200BE75ED /* ZA7LevelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZA7LevelView.m; sourceTree = "<group>"; };
+		0DEAA2D319711D7200BE75ED /* ZA7LevelView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZA7LevelView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +110,7 @@
 			children = (
 				0D1F20E5196F844B00B4AAF2 /* ZATextFieldView.h */,
 				0D1F20E6196F844B00B4AAF2 /* ZATextFieldView.m */,
-				0D1F20E8196F845E00B4AAF2 /* ZATextFieldView.xib */,
+				0DEAA2CD197110B200BE75ED /* ZATextFieldView.xib */,
 			);
 			name = "Control-输入题【输入框单行】";
 			sourceTree = "<group>";
@@ -189,7 +194,7 @@
 			children = (
 				0DEAA2BC196FDFC700BE75ED /* ZAJudgeView.h */,
 				0DEAA2BD196FDFC700BE75ED /* ZAJudgeView.m */,
-				0DEAA2BF196FE04000BE75ED /* ZAJudgeView.xib */,
+				0DEAA2CF197110C700BE75ED /* ZAJudgeView.xib */,
 			);
 			name = "Control-是否题";
 			sourceTree = "<group>";
@@ -197,9 +202,9 @@
 		0DEAA2C61970063100BE75ED /* Controls */ = {
 			isa = PBXGroup;
 			children = (
-				0DEAA2C7197012DF00BE75ED /* Control-程度题 */,
 				0DEAA2C3197005E400BE75ED /* ZABaseView.h */,
 				0DEAA2C4197005E400BE75ED /* ZABaseView.m */,
+				0DEAA2C7197012DF00BE75ED /* Control-程度题 */,
 				0DEAA2BB196FDF5000BE75ED /* Control-是否题 */,
 				0D1F20ED196FDB6F00B4AAF2 /* Control-输入题【输入框单行】 */,
 				0D1F20EA196F8E5900B4AAF2 /* ZAControlManager.h */,
@@ -214,6 +219,9 @@
 				0DEAA2C81970136200BE75ED /* ZA6LevelView.h */,
 				0DEAA2C91970136200BE75ED /* ZA6LevelView.m */,
 				0DEAA2CB1970136F00BE75ED /* ZA6LevelView.xib */,
+				0DEAA2D119711D7200BE75ED /* ZA7LevelView.h */,
+				0DEAA2D219711D7200BE75ED /* ZA7LevelView.m */,
+				0DEAA2D319711D7200BE75ED /* ZA7LevelView.xib */,
 			);
 			name = "Control-程度题";
 			sourceTree = "<group>";
@@ -297,9 +305,10 @@
 				0D1F6736196F81B90008C882 /* Images.xcassets in Resources */,
 				0DEAA2CC1970136F00BE75ED /* ZA6LevelView.xib in Resources */,
 				0D1F6728196F81B90008C882 /* InfoPlist.strings in Resources */,
+				0DEAA2D0197110C700BE75ED /* ZAJudgeView.xib in Resources */,
+				0DEAA2D519711D7200BE75ED /* ZA7LevelView.xib in Resources */,
+				0DEAA2CE197110B200BE75ED /* ZATextFieldView.xib in Resources */,
 				0D1F6731196F81B90008C882 /* Main.storyboard in Resources */,
-				0DEAA2C0196FE04000BE75ED /* ZAJudgeView.xib in Resources */,
-				0D1F20E9196F845E00B4AAF2 /* ZATextFieldView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +330,7 @@
 				0D1F6734196F81B90008C882 /* ViewController.m in Sources */,
 				0DEAA2C5197005E400BE75ED /* ZABaseView.m in Sources */,
 				0D1F672E196F81B90008C882 /* AppDelegate.m in Sources */,
+				0DEAA2D419711D7200BE75ED /* ZA7LevelView.m in Sources */,
 				0D1F672A196F81B90008C882 /* main.m in Sources */,
 				0D1F20EC196F8E5900B4AAF2 /* ZAControlManager.m in Sources */,
 				0DEAA2CA1970136200BE75ED /* ZA6LevelView.m in Sources */,

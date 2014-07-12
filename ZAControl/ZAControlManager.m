@@ -7,24 +7,39 @@
 //
 
 #import "ZAControlManager.h"
+#import "ZA6LevelView.h"
+#import "ZA7LevelView.h"
+
 
 @implementation ZAControlManager
 
 
-+ (ZATextFieldView *)loadTextFieldFrame:(CGRect)frame
-                              withValue:(NSString *)defaultValue
-                        withPlaceholder:(NSString *)placeholder
-                   blockDidBeginEditing:(BlockDidBeginEditing)blockDidBeginEditing
-                            blockReturn:(BlockReturn)blockReturn
++ (ZABaseView *)loadZALevelViewType:(LevelQuestionType)type
+                            withFrame:(CGRect)frame
+                             withDesc:(NSString *)desc
+                    withQuestionTitle:(NSString *)questionTitle
+                            withValue:(id)value
+                          blockReturn:(BlockReturn)blockReturn
 {
-    ZATextFieldView *view = [[[NSBundle mainBundle] loadNibNamed:@"ZATextFieldView" owner:nil options:nil] firstObject];
+    ZABaseView *view = nil;
+    switch (type) {
+        case LevelQuestionType6:
+            view = [[[NSBundle mainBundle] loadNibNamed:@"ZA6LevelView" owner:nil options:nil] firstObject];
+            break;
+        case LevelQuestionType7:
+            view = [[[NSBundle mainBundle] loadNibNamed:@"ZA7LevelView" owner:nil options:nil] firstObject];
+            break;
+        default:
+            break;
+    }
     view.frame = frame;
-    view.textField.placeholder = placeholder;
-    view.textField.text = defaultValue;
-    view.blockDidBeginEditing = blockDidBeginEditing;
-    view.blockReturn = blockReturn;
+    [view setValue:desc forKeyPath:@"labelDesc.text"];
+    [view setValue:questionTitle forKeyPath:@"labelQuestionTitle.text"];
+    [view setValue:value forKeyPath:@"value"];
+    [view setValue:blockReturn forKeyPath:@"blockReturn"];
     return view;
 }
+
 
 + (ZAJudgeView *)loadJudgeViewFrame:(CGRect)frame
                            withDesc:(NSString *)desc
@@ -44,5 +59,23 @@
     view.blockReturn = blockReturn;
     return view;
 }
+
+
++ (ZATextFieldView *)loadTextFieldFrame:(CGRect)frame
+                              withValue:(NSString *)defaultValue
+                        withPlaceholder:(NSString *)placeholder
+                   blockDidBeginEditing:(BlockDidBeginEditing)blockDidBeginEditing
+                            blockReturn:(BlockReturn)blockReturn
+{
+    ZATextFieldView *view = [[[NSBundle mainBundle] loadNibNamed:@"ZATextFieldView" owner:nil options:nil] firstObject];
+    view.frame = frame;
+    view.textField.placeholder = placeholder;
+    view.textField.text = defaultValue;
+    view.blockDidBeginEditing = blockDidBeginEditing;
+    view.blockReturn = blockReturn;
+    return view;
+}
+
+
 
 @end

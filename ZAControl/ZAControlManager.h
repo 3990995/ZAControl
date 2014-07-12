@@ -11,14 +11,20 @@
 #import "ZAJudgeView.h"
 #import "ZA6LevelView.h"
 
+typedef enum : NSUInteger {
+    LevelQuestionType6,
+    LevelQuestionType7,
+} LevelQuestionType;
+
 @interface ZAControlManager : NSObject
 
 
-+ (ZA6LevelView *)loadZA6LevelViewFrame:(CGRect)frame
-                               withDesc:(NSString *)desc
-                      withQuestionTitle:(NSString *)questionTitle
-                              withValue:(id)value
-                            blockReturn:(BlockReturn)blockReturn;
++ (ZABaseView *)loadZALevelViewType:(LevelQuestionType)type
+                            withFrame:(CGRect)frame
+                             withDesc:(NSString *)desc
+                    withQuestionTitle:(NSString *)questionTitle
+                            withValue:(id)value
+                          blockReturn:(BlockReturn)blockReturn;
 
 
 

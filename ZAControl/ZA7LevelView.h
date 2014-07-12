@@ -1,6 +1,6 @@
 //
 //  ZA6LevelView.h
-//  ZAControl 程度题6级别
+//  ZAControl 程度题7级别
 //
 //  Created by liao on 14-7-11.
 //  Copyright (c) 2014年 Zhenai Inc. All rights reserved.
@@ -8,7 +8,7 @@
 
 #import "ZABaseView.h"
 
-@interface ZA6LevelView : ZABaseView
+@interface ZA7LevelView : ZABaseView
 
 //顶部灰色描述
 @property (weak, nonatomic) IBOutlet UILabel *labelDesc;

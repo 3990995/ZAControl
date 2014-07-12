@@ -6,9 +6,9 @@
 //  Copyright (c) 2014年 Zhenai Inc. All rights reserved.
 //
 
-#import "ZA6LevelView.h"
+#import "ZA7LevelView.h"
 
-@implementation ZA6LevelView{
+@implementation ZA7LevelView{
     UIColor *tc;
     UIButton *tb;
 }
@@ -27,7 +27,7 @@
         UIButton *btn = self.buttons[i];
         btn.selected = (btn == sender);
         if (btn.selected) {
-           _value = @(i+1);
+            _value = @(i+1);
             tc = btn.backgroundColor;
             btn.backgroundColor = nil;
             tb = btn;
